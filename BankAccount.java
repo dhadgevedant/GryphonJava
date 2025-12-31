@@ -3,14 +3,12 @@
     private String accountHolderName;
     private String accountNumber;
     private double balance; 
-    
     // Constructor to initialize bank account
     public BankAccount(String accountHolderName, String accountNumber, double initialBalance) {
         this.accountHolderName = accountHolderName;
         this.accountNumber = accountNumber;
         this.balance = initialBalance;  
     }
-    
     // Meathod to deposit money
     public void deposit(double amount) {
         if (amount > 0) {
@@ -20,7 +18,6 @@
             System.out.println("Deposit amount must be positive.");     
         }
     }   
-   
     // Method to withdraw money
     public void withdraw(double amount) {
         if (amount > 0 && amount <= balance) {      
@@ -30,12 +27,10 @@
             System.out.println("Insufficient balance or invalid withdrawal amount.");
         }
     }
-    
     // Method to check balance
     public double getBalance() {
         return balance;
     }
-    
     // Method to display account details
     public void displayAccountDetails() {
         System.out.println("Account Holder: " + accountHolderName);
