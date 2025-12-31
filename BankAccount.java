@@ -45,3 +45,86 @@
         System.out.println("Final Balance: $" + account.getBalance());
     }
 }
+
+/*
+public class BankApp {
+    public static void main(String[] args) {
+
+        // Creating object (Real customer account)
+        BankAccount account = new BankAccount(10101, "Sachin", 50000, 1234);
+
+        System.out.println("Account No: " + account.getAccountNumber());
+        System.out.println("Name: " + account.getAccountHolderName());
+
+        account.deposit(10000);
+        account.withdraw(8000, 1234);
+
+        System.out.println("Balance: " + account.getBalance(1234));
+
+        // Wrong PIN test
+        System.out.println("Balance: " + account.getBalance(1111));
+    }
+}
+
+class BankAccount {
+
+    //  Private data (Hidden)
+    private int accountNumber;
+    private String accountHolderName;
+    private double balance;
+    private int pin;
+
+    // Constructor (Initialization)
+    public BankAccount(int accountNumber, String name,
+    		double balance, int pin) {
+        this.accountNumber = accountNumber;
+        this.accountHolderName = name;
+        this.balance = balance;
+        this.pin = pin;
+    }
+
+    //  Read-only access
+    public int getAccountNumber() {
+        return accountNumber;
+    }
+
+    public String getAccountHolderName() {
+        return accountHolderName;
+    }
+
+    //  Controlled balance access
+    public double getBalance(int enteredPin) {
+        if (enteredPin == pin) {
+            return balance;
+        } else {
+            System.out.println("Invalid PIN!");
+            return 0;
+        }
+    }
+
+    //  Deposit with validation
+    public void deposit(double amount) {
+        if (amount > 0) {
+            balance += amount;
+            System.out.println("Deposited " + amount);
+        } else {
+            System.out.println("Invalid deposit amount");
+        }
+    }
+
+    //  Withdraw with rules
+    public void withdraw(double amount, int enteredPin) {
+        if (enteredPin != pin) {
+            System.out.println("Invalid PIN!");
+            return;
+        }
+
+        if (amount <= balance) {
+            balance -= amount;
+            System.out.println("Withdrawn " + amount);
+        } else {
+            System.out.println("Insufficient Balance");
+        }
+    }
+};
+*/
