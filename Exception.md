@@ -177,4 +177,32 @@ void readFile() throws IOException {
 
 ---
 
+## Custom Exception in Java 
+
+A **custom exception** is a user-defined exception created to represent application-specific errors. It is created by **extending the `Exception` class**, which makes it a **checked exception**.
+
+### Creation:
+
+```java
+class MyException extends Exception {
+    MyException(String message) {
+        super(message);
+    }
+}
+```
+
+### Explanation:
+
+* **`extends`** is used to inherit the `Exception` class so the custom class becomes an exception type.
+* **`super(message)`** calls the parent `Exception` constructor and stores the error message.
+* The custom exception can be **thrown using `throw`** and **declared using `throws`**.
+* Being a checked exception, it must be **handled using `try-catch`**.
+
+### One-line Exam Answer:
+
+> A custom exception is created by extending the `Exception` class, where `extends` enables inheritance and `super`passes the error message to the parent class.
+
+
+---
+
 ---
