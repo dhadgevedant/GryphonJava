@@ -26,6 +26,10 @@ class Employee {
         this.id = id;
     }
 
+    public Employee(String name2, String id2, double salary) {
+        //TODO Auto-generated constructor stub
+    }
+
     void displayInfo() {
         System.out.println("Employee Name: " + name);
         System.out.println("Employee ID: " + id);
@@ -33,6 +37,21 @@ class Employee {
 
     void work() {
         System.out.println(name + " is working.");
+    }
+
+    public String getName() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getName'");
+    }
+
+    public String getId() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getId'");
+    }
+
+    public String getSalary() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getSalary'");
     }
 }
 class Developer extends Employee {
