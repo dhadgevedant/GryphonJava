@@ -1,0 +1,1 @@
+1. cretate a database called college db. create 3 tables, student, faculty and department 

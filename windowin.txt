@@ -1,0 +1,26 @@
+SELECT
+    column,
+    WINDOW_FUNCTION(expression)
+    OVER (
+        PARTATION BY column
+        ORDER BY column
+        ROWS/RANGE
+    )
+FROM table;
+
+//
+
+create table Employee_Sales (
+
+    emp_id INT,
+    emp_name VARCHAR(50),
+    department VARCHAR(50),
+    sale_date DATE,
+    ammount INT
+);
+
+insert into Employee_Sales (emp_id, emp_name, department, sale_date, ammount) values
+(1, 'amit', 'IT', '2024-01-01', 1000)
+(2, 'neha', 'HR', '2024-01-02', 200)
+(3, 'rahul', 'HR', '2024-01-01', 2500)
+(4, 'karan', 'IT', '2024-01-03', 5000)
