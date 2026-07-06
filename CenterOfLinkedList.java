@@ -57,8 +57,8 @@ public class CenterOfLinkedList {
 
         tail = AddNode(head, tail, 2);
         tail = AddNode(head, tail, 3);
-        tail = AddNode(head, tail, 4);
-        tail = AddNode(head, tail, 5);
+        // tail = AddNode(head, tail, 4);
+        // tail = AddNode(head, tail, 5);
 
         //print linked list
         Node current = head;
